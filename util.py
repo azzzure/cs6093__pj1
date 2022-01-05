@@ -26,7 +26,8 @@ def print_dict_by_seq(dc)  :
 def extract_max_n_freq(dc,n=6):
     v=list(dc.values())
     v=sorted(v,reverse=True)
-
+    if (n==1):
+        return v[0]
     return v[0:n]
 def print_dict_by_freq(dc,re=True,n=0):
     #按照频率顺序显示信息
